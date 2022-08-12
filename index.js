@@ -6,7 +6,7 @@ const https = require('https');
             data += chunk;
           });
         
-          // The whole response has been received. Print out the result.
+   
           res.on('end', () => {
             const resultData= JSON.parse(data);
           for(let i=0; i<2; i++){
